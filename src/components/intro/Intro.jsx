@@ -3,7 +3,7 @@ import "./intro.scss"
 export default function Intro() {
     return (
         <div className="intro" id="intro">
-            hkkjhbnn nbbvvbnn
+        
             <div className="left">
                 <div className="imagecontainer">
 
