@@ -9,8 +9,9 @@
     position: fixed;
     top:0;
     right: -300px;
-    z-index: 2;
     display: flex;
+    z-index: 2;
+    
     flex-direction: center;
     align-items: center;
     justify-content: center;
@@ -37,6 +38,8 @@
             &:hover{
                 font-weight: 500;
             }
+
+        
         }
     }
 

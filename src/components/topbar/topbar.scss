@@ -6,8 +6,8 @@
     color:$maincolor;
     position: fixed;
     top: 0;
-z-index: 3;
-transition: all 1s ease;
+    z-index: 3;
+    transition: all 1s ease;
 .wrapper{
     padding:10px 30px;
     display: flex;
@@ -28,6 +28,9 @@ transition: all 1s ease;
             display: flex;
             align-items: center;
             margin-left: 30px;
+            @include mobile{
+                display: none;
+              }
             .item{
                 font-size: 18px;
                 margin-bottom: 5px;
@@ -38,26 +41,49 @@ transition: all 1s ease;
                 }
             
         }
+        .imagecontainer{
+            height:40px;
+            width:40px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 550px;
+            cursor: pointer;
+            img{
+                width:100px;
+                overflow: hidden;
+            }
+            @include mobile{
+                heigth:40px;
+                width:40px;
+                margin-left: 50px;
+              }
+        }
+    
+    
     }
     .right{
         .hamburger{
+            margin-right: 0px;
             width: 32px;
             height: 25px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             cursor: pointer;
-        span{
-            width: 100%;
-            height: 3px;
-            background-color: $maincolor;
-            transform-origin: left;
-            transition: all 2s ease;
-            
+            span{
+                width: 100%;
+                height: 3px;
+                background-color: $maincolor;
+                transform-origin: left;
+                transition: all 2s ease;
+                
 
+            }
         }
     }
-    }
+        
+    
 }
 &.active{
     background-color: $maincolor;
